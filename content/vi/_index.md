@@ -2,7 +2,19 @@
 title: "Báo cáo thực tập"
 linkTitle: "Trang chủ"
 ---
-
+<div style="text-align: center; margin-bottom: 24px;">
+  <img
+    src="/images/avatar.jpeg"
+    alt="Thái Đức Khang"
+    style="
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #2496ed;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    ">
+</div>
 ### Thông tin sinh viên
 
 <table>
