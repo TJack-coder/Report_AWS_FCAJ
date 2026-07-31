@@ -63,6 +63,7 @@ params:
   ordersectionsby: weight
   titleSeparator: "::"
   externalLinkTarget: _blank
+  disableLanguageSwitchingButton: true
 
 menus:
   shortcuts:
