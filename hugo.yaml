@@ -1,0 +1,82 @@
+baseURL: https://tjack-coder.github.io/Report_AWS/
+title: Internship Report
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+  - term
+
+module:
+  imports:
+    - path: github.com/McShelby/hugo-theme-relearn
+
+languages:
+  en:
+    languageCode: en-US
+    languageName: English
+    contentDir: content/en
+    title: Internship Report
+    weight: 1
+    params:
+      landingPageName: '<i class="fa-fw fas fa-home"></i> Home'
+  vi:
+    languageCode: vi-VN
+    languageName: Tiếng Việt
+    contentDir: content/vi
+    title: Báo cáo thực tập
+    weight: 2
+    params:
+      landingPageName: '<i class="fa-fw fas fa-home"></i> Trang chủ'
+
+params:
+  author: Thai Duc Khang
+  studentId: "2352500"
+  className: CC23KHM
+  major: Computer Science
+  university: Ho Chi Minh City University of Technology
+  faculty: Faculty of Computer Science and Engineering
+  company: Amazon Web Services Viet Nam Company Limited
+  program: Workforce Bootcamp - First Cloud AI Journey
+  internshipPeriod: 06/06/2026 - 15/08/2026
+  email: khang.thaiduc@hcmut.edu.vn
+  repositoryURL: https://github.com/TJack-coder/AWS_ProjecT/tree/develop_2.0
+  lastUpdated: 31-07-2026
+  themeVariant: blue
+  showVisitedLinks: true
+  disableLandingPageButton: true
+  disableLanguageSwitchingButton: false
+  disableBreadcrumb: false
+  disableToc: false
+  disableNextPrev: false
+  disableSearch: false
+  disableSearchHiddenPages: false
+  disableShortcutsTitle: false
+  collapsibleMenu: true
+  alwaysopen: false
+  ordersectionsby: weight
+  titleSeparator: "::"
+  externalLinkTarget: _blank
+
+menus:
+  shortcuts:
+    - name: '<i class="fa-fw fab fa-aws"></i> AWS Study Group - Blog'
+      url: https://awsstudygroup.com/
+      weight: 10
+    - name: '<i class="fa-fw fab fa-facebook"></i> AWS Study Group - FB Group'
+      url: https://www.facebook.com/groups/awsstudygroup/
+      weight: 20
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    lineNos: false
+
+outputs:
+  home:
+    - html
+    - rss
+    - search

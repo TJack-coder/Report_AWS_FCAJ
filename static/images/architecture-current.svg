@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CloudLibrary current AWS deployment architecture</title>
+  <desc id="desc">Developers push to GitHub. GitHub Actions tests, builds images, pushes them to ECR, creates an S3 deployment bundle and an Elastic Beanstalk application version. Elastic Beanstalk runs frontend, backend and PostgreSQL containers on EC2. CloudWatch monitors the environment and CloudShell supports operations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f9ff"/><stop offset="1" stop-color="#e9efff"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2458ff"/><stop offset="1" stop-color="#7b8dff"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#203967" flood-opacity=".14"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#5572b6"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#cbd8ef;stroke-width:2;rx:22;filter:url(#shadow)}
+      .group{fill:none;stroke:#8ea4cf;stroke-width:2;stroke-dasharray:9 8;rx:26}
+      .title{font:700 25px Inter,Arial,sans-serif;fill:#152238}
+      .label{font:700 20px Inter,Arial,sans-serif;fill:#152238}
+      .small{font:500 16px Inter,Arial,sans-serif;fill:#61718d}
+      .step{font:700 15px Inter,Arial,sans-serif;fill:#49618f}
+      .line{stroke:#5572b6;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .monitor{stroke:#00a67e;stroke-width:3;fill:none;stroke-dasharray:8 7;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" rx="34" fill="url(#bg)"/>
+  <text x="70" y="72" class="title">CloudLibrary - Current AWS Deployment Architecture</text>
+  <text x="70" y="105" class="small">CI/CD, container registry, deployment bundle, Docker Compose runtime and centralized monitoring</text>
+
+  <rect x="55" y="155" width="280" height="590" class="group"/>
+  <text x="82" y="198" class="label">Development</text>
+  <rect x="88" y="235" width="214" height="105" class="box"/>
+  <text x="195" y="275" text-anchor="middle" class="label">Developers</text>
+  <text x="195" y="307" text-anchor="middle" class="small">code · bug fixes</text>
+  <rect x="88" y="405" width="214" height="105" class="box"/>
+  <text x="195" y="445" text-anchor="middle" class="label">GitHub</text>
+  <text x="195" y="477" text-anchor="middle" class="small">develop_2.0</text>
+  <rect x="88" y="575" width="214" height="120" class="box"/>
+  <text x="195" y="615" text-anchor="middle" class="label">GitHub Actions</text>
+  <text x="195" y="647" text-anchor="middle" class="small">test · build · deploy</text>
+  <path d="M195 340V400" class="line"/><text x="210" y="378" class="step">1. push</text>
+  <path d="M195 510V570" class="line"/><text x="210" y="548" class="step">2. trigger</text>
+
+  <rect x="390" y="155" width="410" height="590" class="group"/>
+  <text x="418" y="198" class="label">Build artifacts</text>
+  <rect x="430" y="235" width="330" height="130" class="box"/>
+  <text x="595" y="275" text-anchor="middle" class="label">Amazon ECR</text>
+  <text x="595" y="308" text-anchor="middle" class="small">aws-library-frontend</text>
+  <text x="595" y="334" text-anchor="middle" class="small">aws-library-backend</text>
+  <rect x="430" y="435" width="330" height="110" class="box"/>
+  <text x="595" y="475" text-anchor="middle" class="label">Amazon S3</text>
+  <text x="595" y="508" text-anchor="middle" class="small">deployment bundle (.zip)</text>
+  <rect x="430" y="615" width="330" height="90" class="box"/>
+  <text x="595" y="655" text-anchor="middle" class="label">Application version</text>
+  <text x="595" y="682" text-anchor="middle" class="small">gh-&lt;commit&gt;-&lt;run&gt;</text>
+
+  <path d="M302 635H425V300" class="line"/><text x="350" y="620" class="step">3. push images</text>
+  <path d="M302 650H380V490H425" class="line"/><text x="340" y="477" class="step">4. upload bundle</text>
+  <path d="M595 545V610" class="line"/><text x="610" y="586" class="step">5. create version</text>
+
+  <rect x="850" y="155" width="500" height="590" class="group"/>
+  <text x="878" y="198" class="label">Elastic Beanstalk environment</text>
+  <text x="878" y="225" class="small">EC2 · Docker Compose · Amazon Linux</text>
+  <rect x="905" y="265" width="390" height="115" class="box"/>
+  <rect x="905" y="265" width="14" height="115" rx="7" fill="#00a67e"/>
+  <text x="1100" y="307" text-anchor="middle" class="label">Frontend container</text>
+  <text x="1100" y="340" text-anchor="middle" class="small">React + Vite + Nginx · port 80</text>
+  <rect x="905" y="435" width="390" height="115" class="box"/>
+  <rect x="905" y="435" width="14" height="115" rx="7" fill="#2458ff"/>
+  <text x="1100" y="477" text-anchor="middle" class="label">Backend container</text>
+  <text x="1100" y="510" text-anchor="middle" class="small">Flask + Gunicorn · JWT API</text>
+  <rect x="905" y="605" width="390" height="100" class="box"/>
+  <rect x="905" y="605" width="14" height="100" rx="7" fill="#385b8f"/>
+  <text x="1100" y="646" text-anchor="middle" class="label">PostgreSQL container</text>
+  <text x="1100" y="677" text-anchor="middle" class="small">current database deployment</text>
+  <path d="M1100 380V430" class="line"/><text x="1116" y="414" class="step">/api</text>
+  <path d="M1100 550V600" class="line"/><text x="1116" y="586" class="step">SQL</text>
+  <path d="M760 660H840V490H900" class="line"/><text x="790" y="645" class="step">6. deploy</text>
+  <path d="M760 300H840V322H900" class="line"/>
+
+  <rect x="1400" y="265" width="150" height="115" class="box"/>
+  <text x="1475" y="308" text-anchor="middle" class="label">User</text>
+  <text x="1475" y="340" text-anchor="middle" class="small">browser</text>
+  <path d="M1395 322H1300" class="line"/><text x="1325" y="305" class="step">7. access</text>
+
+  <rect x="390" y="785" width="300" height="80" class="box"/>
+  <text x="540" y="820" text-anchor="middle" class="label">AWS CloudShell</text>
+  <text x="540" y="847" text-anchor="middle" class="small">CLI · IAM · operations</text>
+  <rect x="850" y="785" width="400" height="80" class="box"/>
+  <text x="1050" y="820" text-anchor="middle" class="label">Amazon CloudWatch</text>
+  <text x="1050" y="847" text-anchor="middle" class="small">logs · metrics · alarms · health</text>
+  <path d="M690 825H840" class="line"/><text x="723" y="808" class="step">operations</text>
+  <path d="M1100 745V780" class="monitor"/><text x="1116" y="768" class="step">monitor</text>
+</svg>

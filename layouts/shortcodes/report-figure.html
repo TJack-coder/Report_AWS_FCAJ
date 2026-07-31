@@ -1,0 +1,6 @@
+<figure style="margin:2rem 0;text-align:center;">
+  <a href="{{ (.Get "src") | relURL }}" target="_blank" rel="noopener" style="display:block;">
+    <img loading="lazy" src="{{ (.Get "src") | relURL }}" alt="{{ .Get "alt" }}" style="max-width:100%;height:auto;border:1px solid rgba(127,127,127,.25);border-radius:.35rem;box-shadow:0 .35rem 1.1rem rgba(0,0,0,.09);margin:auto;">
+  </a>
+  {{ with .Get "caption" }}<figcaption style="margin-top:.65rem;font-size:.9rem;opacity:.78;">{{ . }}</figcaption>{{ end }}
+</figure>
