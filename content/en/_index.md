@@ -3,37 +3,46 @@ title: "Internship Report"
 linkTitle: "Home"
 ---
 
-<div style="text-align: center; margin-bottom: 24px;">
-  <img
-    src="{{< relref "/images/avatar.jpeg" >}}"
-    alt="Thai Duc Khang"
-    style="
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #2496ed;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
-    ">
+<div class="home-warning">
+  <strong>⚠ Warning</strong>
+  <p>
+    The information presented on this website is part of my official
+    internship report and is provided for academic evaluation purposes.
+  </p>
 </div>
 
-### Student Information
+## Student Information
 
-<table>
-<tr><td><strong>Full Name</strong></td><td>Thai Duc Khang</td></tr>
-<tr><td><strong>Student ID</strong></td><td>2352500</td></tr>
-<tr><td><strong>Email</strong></td><td>khang.thaiduc@hcmut.edu.vn</td></tr>
-<tr><td><strong>University</strong></td><td>Ho Chi Minh City University of Technology</td></tr>
-<tr><td><strong>Faculty</strong></td><td>Faculty of Computer Science and Engineering</td></tr>
-<tr><td><strong>Major</strong></td><td>Computer Science</td></tr>
-<tr><td><strong>Class</strong></td><td>CC23KHM</td></tr>
-<tr><td><strong>Internship Company</strong></td><td>Amazon Web Services Viet Nam Company Limited</td></tr>
-<tr><td><strong>Internship Position</strong></td><td>Workforce Bootcamp - First Cloud AI Journey</td></tr>
-<tr><td><strong>Internship Duration</strong></td><td>From 06/06/2026 to 15/08/2026</td></tr>
-</table>
+<div class="student-information">
 
+**Full Name:** Thai Duc Khang
 
-### Report Content
+**Student ID:** 2352500
+
+**Email:** khang.thaiduc@hcmut.edu.vn
+
+**University:** Ho Chi Minh City University of Technology
+
+**Faculty:** Faculty of Computer Science and Engineering
+
+**Major:** Computer Science
+
+**Class:** CC23KHM
+
+**Internship Company:** Amazon Web Services Viet Nam Company Limited
+
+**Internship Position:** Workforce Bootcamp – First Cloud AI Journey
+
+**Internship Duration:** From 06/06/2026 to 15/08/2026
+
+</div>
+
+{{< simple-avatar
+    src="images/avatar.jpeg"
+    alt="Thai Duc Khang"
+>}}
+
+## Report Content
 
 1. [Worklog](1-worklog/)
 2. [Proposal](2-proposal/)
