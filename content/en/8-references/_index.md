@@ -9,8 +9,7 @@ weight: 8
 
 - **GitHub repository:** [TJack-coder/AWS_ProjecT - develop_2.0](https://github.com/TJack-coder/AWS_ProjecT/tree/develop_2.0)
 - **Source code:** available in the repository above; this website includes only sanitized deployment files.
-- **Video demo:** no official URL was available when the website was generated.
-- **Live application:** the Elastic Beanstalk URL is not hard-coded because it may change when the environment is recreated.
+- **Live application:** [CloudLibrary](http://aws-library-system-env.eba-2mtpmapf.ap-southeast-2.elasticbeanstalk.com/login)
 
 ## Supplementary PDF reports
 
