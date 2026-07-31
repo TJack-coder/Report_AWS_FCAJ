@@ -3,7 +3,6 @@ title: "Internship Report"
 linkTitle: "Home"
 ---
 
-# Internship Report
 
 ### Student Information
 
