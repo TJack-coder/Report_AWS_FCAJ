@@ -21,7 +21,6 @@ languages:
     params:
       linkTitle: |-
         CLOUDLIBRARY
-        INTERNSHIP REPORT
       landingPageName: '<i class="fa-fw fas fa-home"></i> Home'
 
   vi:
