@@ -30,7 +30,6 @@ linkTitle: "Trang chủ"
 <tr><td><strong>Thời gian</strong></td><td>Từ 06/06/2026 đến 15/08/2026</td></tr>
 </table>
 
-<p style="text-align:center"><img src="../images/profile.svg" alt="Ảnh đại diện Thái Đức Khang" style="width:220px;border-radius:12px"></p>
 
 ### Nội dung báo cáo
 
