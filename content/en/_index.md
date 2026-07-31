@@ -3,13 +3,6 @@ title: "Internship Report"
 linkTitle: "Home"
 ---
 
-<div class="home-warning">
-  <strong>⚠ Warning</strong>
-  <p>
-    The information presented on this website is part of my official
-    internship report and is provided for academic evaluation purposes.
-  </p>
-</div>
 
 ## Student Information
 
