@@ -5,7 +5,7 @@ linkTitle: "Home"
 
 <div style="text-align: center; margin-bottom: 24px;">
   <img
-    src="/images/avatar.jpeg"
+    src="{{< relref "/images/avatar.jpeg" >}}"
     alt="Thai Duc Khang"
     style="
       width: 160px;
