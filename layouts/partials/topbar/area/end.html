@@ -1,0 +1,22 @@
+{{- $currentPage := . -}}
+
+{{- range .AllTranslations -}}
+  {{- if ne .Language.Lang $currentPage.Language.Lang -}}
+    {{ partial "topbar/func/button.html" (dict
+      "page" $currentPage
+      "class" "topbar-language-switch"
+      "href" .RelPermalink
+      "icon" "language"
+      "hint" .Language.LanguageName
+      "title" .Language.LanguageName
+    )}}
+  {{- end -}}
+{{- end -}}
+
+{{ partial "topbar/button/prev.html" (dict
+  "page" .
+)}}
+
+{{ partial "topbar/button/next.html" (dict
+  "page" .
+)}}
