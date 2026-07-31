@@ -1,0 +1,7 @@
+{{ $src := .Get "src" | default "images/avatar.jpeg" }}
+
+<div class="simple-avatar">
+  <img
+    src="{{ $src | relURL }}"
+    alt="{{ .Get "alt" | default "Student avatar" }}">
+</div>
