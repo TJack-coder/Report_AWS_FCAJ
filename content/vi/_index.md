@@ -3,8 +3,6 @@ title: "Báo cáo thực tập"
 linkTitle: "Trang chủ"
 ---
 
-# Báo cáo thực tập
-
 ### Thông tin sinh viên
 
 <table>
