@@ -19,7 +19,11 @@ languages:
     title: Internship Report
     weight: 1
     params:
+      linkTitle: |-
+        CLOUDLIBRARY
+        INTERNSHIP REPORT
       landingPageName: '<i class="fa-fw fas fa-home"></i> Home'
+
   vi:
     languageCode: vi-VN
     languageName: Tiếng Việt
@@ -27,6 +31,9 @@ languages:
     title: Báo cáo thực tập
     weight: 2
     params:
+      linkTitle: |-
+        CLOUDLIBRARY
+        BÁO CÁO THỰC TẬP
       landingPageName: '<i class="fa-fw fas fa-home"></i> Trang chủ'
 
 params:
