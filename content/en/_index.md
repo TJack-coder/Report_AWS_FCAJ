@@ -32,7 +32,6 @@ linkTitle: "Home"
 <tr><td><strong>Internship Duration</strong></td><td>From 06/06/2026 to 15/08/2026</td></tr>
 </table>
 
-<p style="text-align:center"><img src="images/profile.svg" alt="Thai Duc Khang profile placeholder" style="width:220px;border-radius:12px"></p>
 
 ### Report Content
 
